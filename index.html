@@ -1,73 +1,44 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YAMA Dance Practice Hub</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header class="hub-header">
-    <h1>YAMA Dance Practice Hub</h1>
-    <p>Adım adım dans hareketleri kütüphanesi</p>
-  </header>
-
-  <main class="container">
-    <!-- Seviye Filtre Butonları -->
-    <div class="filter-container">
-      <button class="filter-btn active" onclick="filterMoves('all')">Tümü</button>
-      <button class="filter-btn" onclick="filterMoves('beginner')">🟢 Başlangıç</button>
-      <button class="filter-btn" onclick="filterMoves('intermediate')">🟡 Orta</button>
-      <button class="filter-btn" onclick="filterMoves('advanced')">🔴 İleri</button>
+<!-- Dans Hareketleri Izgarası (Grid) -->
+<div class="moves-grid">
+  
+  <!-- 1. HAREKET: Rumba Temel Adım -->
+  <div class="move-card" data-level="beginner">
+    <div class="badge beginner">Başlangıç</div>
+    <div class="media-box">
+      <!-- Buraya yüklediğin GIF'in yolunu veriyoruz -->
+      <img src="images/rumba-basic.gif" alt="Rumba Temel Adım">
     </div>
-
-    <!-- Dans Hareketleri Izgarası (Grid) -->
-    <div class="moves-grid">
-      
-      <!-- ÖRNEK 1: Başlangıç Hareketi -->
-      <div class="move-card" data-level="beginner">
-        <div class="badge beginner">Başlangıç</div>
-        <div class="media-box">
-          <!-- Yer tutucu görsel/GIF veya video -->
-          <img src="https://via.placeholder.com/400x250?text=Temel+Adım+Animasyonu" alt="Temel Adım">
-        </div>
-        <div class="card-content">
-          <h3>Temel Adım (Basic Step)</h3>
-          <span class="rhythm">⏱️ Ritim: 1 - 2 - 3, 5 - 6 - 7</span>
-          <p>Ağırlığı sol ayaktan sağ ayağa aktarırken kalça ritmine ve duruşa dikkat edin.</p>
-        </div>
-      </div>
-
-      <!-- ÖRNEK 2: Orta Seviye Hareketi -->
-      <div class="move-card" data-level="intermediate">
-        <div class="badge intermediate">Orta Seviye</div>
-        <div class="media-box">
-          <img src="https://via.placeholder.com/400x250?text=Dönüş+Kombinasyonu" alt="Dönüş">
-        </div>
-        <div class="card-content">
-          <h3>Sağ Dönüş (Right Turn)</h3>
-          <span class="rhythm">⏱️ Ritim: 1 - 2 - 3</span>
-          <p>Denge noktanızı koruyarak 2. vuruşta gövdenizi sağa doğru çevirmeye başlayın.</p>
-        </div>
-      </div>
-
-      <!-- ÖRNEK 3: İleri Seviye Hareketi -->
-      <div class="move-card" data-level="advanced">
-        <div class="badge advanced">İleri Seviye</div>
-        <div class="media-box">
-          <img src="https://via.placeholder.com/400x250?text=İleri+Figür+Animasyonu" alt="İleri Figür">
-        </div>
-        <div class="card-content">
-          <h3>Gelişmiş Dips & Spins</h3>
-          <span class="rhythm">⏱️ Ritim: 1 - 2 - 3, 5 - 6 - 7 - 8</span>
-          <p>Partnerli çalışmalarda esneklik ve hızlı merkez değişimi gerektiren karmaşık figür.</p>
-        </div>
-      </div>
-
+    <div class="card-content">
+      <h3>Rumba Temel Adım (Basic Step)</h3>
+      <span class="rhythm">⏱️ Ritim: 2 - 3 - 4-1</span>
+      <p>Ağırlık transferini ve kalça hareketini ritme uygun olarak kontrollü şekilde tamamlayın.</p>
     </div>
-  </main>
+  </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <!-- 2. HAREKET: Orta Seviye (Yer tutucu, yeni GIF ekledikçe güncelleyeceğiz) -->
+  <div class="move-card" data-level="intermediate">
+    <div class="badge intermediate">Orta Seviye</div>
+    <div class="media-box">
+      <img src="https://via.placeholder.com/400x250?text=Dönüş+Kombinasyonu" alt="Dönüş">
+    </div>
+    <div class="card-content">
+      <h3>Sağ Dönüş (Right Turn)</h3>
+      <span class="rhythm">⏱️ Ritim: 1 - 2 - 3</span>
+      <p>Denge noktanızı koruyarak 2. vuruşta gövdenizi sağa doğru çevirmeye başlayın.</p>
+    </div>
+  </div>
+
+  <!-- 3. HAREKET: İleri Seviye (Yer tutucu) -->
+  <div class="move-card" data-level="advanced">
+    <div class="badge advanced">İleri Seviye</div>
+    <div class="media-box">
+      <img src="https://via.placeholder.com/400x250?text=İleri+Figür+Animasyonu" alt="İleri Figür">
+    </div>
+    <div class="card-content">
+      <h3>Gelişmiş Dips & Spins</h3>
+      <span class="rhythm">⏱️ Ritim: 1 - 2 - 3, 5 - 6 - 7 - 8</span>
+      <p>Partnerli çalışmalarda esneklik ve hızlı merkez değişimi gerektiren karmaşık figür.</p>
+    </div>
+  </div>
+
+</div>
